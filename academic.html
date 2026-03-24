@@ -23,28 +23,173 @@
             padding: 15px 20px;
         }
 
-        nav ul li a {
+    nav ul li a {
             color: white;
             text-decoration: none;
         }
 
-        nav ul li:hover {
+    nav ul li:hover {
             background-color: #555;
         }
+
+    main{
+        background-color: lightgray;
+        margin: 0;
+        padding: 10px;
+    }
+
+    
 </style>
 
 <body>
     <nav>
         <ul>
             <li><a href="index.html">Home</a></li>
-                <li><a href="aboutMe.html">About Me</a></li>
-                <li><a href="skills.html">Skills</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="academicRec.html">Academic Record</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="academic.html">Academic Record</a></li>
+            <li><a href="contact.html">Contact Me</a></li>
 
         </ul>
     </nav>
+
+    <main>
+        <h1><i>Academic Record</i></h1>
+        <table border="1" cellpadding="8" cellspacing="0">
+            <caption>Year 2 Academic Result</caption>
+            <thead style="background-color: dimgray; color: white;">
+                <tr>
+                    <th scope="col">Code</th>
+                    <th>Course</th>
+                    <th>Credit</th>
+                    <th>Grade</th>
+                    <th>Conferment Result</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <!-- Semester 1-->
+                <tr>
+                    <td colspan="5">Semester 1</td>
+
+                </tr>
+                <tr>
+                    <td scope="row"> SCSE2123</td>
+                    <td> SOFTWARE REQUIREMENTS ENGINEERING</td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td rowspan="8">GOOD PASS</td>
+                </tr>
+                <tr>
+                    <td scope="row"> SCSE2133</td>
+                    <td> SOFTWARE PROCESS AND PROJECT MANAGEMENT</td>
+                    <td>3</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td scope="row"> SCSM2113 </td>
+                    <td> HUMAN COMPUTER INTERACTION FUNDAMENTALS</td>
+                    <td>3</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td scope="row">SCSR2043</td>
+                    <td>OPERATING SYSTEMS</td>
+                    <td>3</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td scope="row">ULRF2432</td>
+                    <td>CATERING SERVICE</td>
+                    <td>2</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td scope="row">SCSE2103</td>
+                    <td>DATA STRUCTURE AND ALGORITHM</td>
+                    <td>3</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td  colspan="2" style="text-align: right;">Total Credit</td>
+                    <td>17</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td  colspan="2" style="text-align: right;">Average Grade</td>
+                    <td></td>
+                    <td>A</td>
+                </tr>
+
+                <!-- Semester 2-->
+                <tr>
+                    <td colspan="5">Semester 2</td>
+
+                </tr>
+                <tr>
+                    <td scope="row"> SCSE2233</td>
+                    <td>SOFTWARE DESIGN AND ARCHITECTURE</td>
+                    <td>3</td>
+                    <td>A</td>
+                    <td rowspan="8">GOOD PASS</td>
+                </tr>
+                <tr>
+                    <td scope="row"> SCSE2243</td>
+                    <td>APPLICATION DEVELOPMENT PROJECT I</td>
+                    <td>3</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td scope="row">SCSM2223</td>
+                    <td>CROSS-PLATFORM APPLICATION DEVELOPMENT</td>
+                    <td>3</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td scope="row">SCSP3213</td>
+                    <td>BUSINESS INTELLIGENCE</td>
+                    <td>3</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td scope="row">UHLB2122</td>
+                    <td>PROFESSIONAL COMMUNICATION SKILLS 1</td>
+                    <td>2</td>
+                    <td>A</td>
+                </tr>
+                <tr>
+                    <td scope="row">ULRS1022</td>
+                    <td>PHILOSOPHY AND CURRENT ISSUES</td>
+                    <td>2</td>
+                    <td>A+</td>
+                </tr>
+                <tr>
+                    <td  colspan="2" style="text-align: right;">Total Credit</td>
+                    <td>16</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td  colspan="2" style="text-align: right;">Average Grade</td>
+                    <td></td>
+                    <td>A</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                <th colspan="5">Semester 1 & 2</th>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: right">Total Credit</td>
+                    <td colspan="3"><strong>33</strong></td>
+
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+
+      
 
 </body>
 </html>
