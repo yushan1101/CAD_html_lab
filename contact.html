@@ -9,7 +9,7 @@
 
 <style>
 	nav {
-            background-color: #333;
+            background-color: #102F15;
         }
 
 	nav ul {
@@ -29,14 +29,16 @@
         }
 
     nav ul li:hover {
-            background-color: #555;
+            background-color: #728C5A;
         }
 
     main{
-        background-color: lightgray;
+        background-color: #EBFADC;
         margin: 0;
         padding: 10px;
     }
+
+    
 </style>
 
 <body>
@@ -54,17 +56,17 @@
 
 <main>
     <h1><i>How to Contact Me?</i></h1>
-    <p><i>Just fill in your information!</i></p>
+    <p><i>Please fill in your personal information and the details.</i></p>
 
     <section id="personal info">
         <form action="#" method="POST" >
-            <fieldset>
-                <legend>Personal Information</legend>
+            <fieldset style="border-color: #C7736E;">
+                <legend><strong>Personal Information</strong></legend>
 
                 <!--name-->
                 <label for="fullName">Full Name:</label>
                 <input type="text" id="fullName" name="fullName" 
-                style="border: 2px solid navy; padding: 6px; font-size: 14px;" 
+                style="border: 1px solid black; padding: 6px; font-size: 14px;" 
                 placeholder="Your full name"
                 required maxlength="60">
                 <br><br>
@@ -72,7 +74,7 @@
                 <!--email-->
                 <label for="email">Email Address:</label>
                 <input type="email" id="email" name="email"
-                style="border: 2px solid navy; padding: 6px; font-size: 14px;" 
+                style="border: 1px solid black; padding: 6px; font-size: 14px;" 
                 placeholder="email@example.com"
                 required maxlength="60">
                 <br><br>
@@ -80,15 +82,16 @@
                 <!--phone-->
                 <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone"
-                style="border: 2px solid navy; padding: 6px; font-size: 14px;" 
+                style="border: 1px solid black; padding: 6px; font-size: 14px;" 
                 placeholder="012-34567890"
                 required maxlength="15">
             </fieldset>
 
-            <fieldset>
-                <legend>About</legend>
+            <!-- details part-->
+            <fieldset style="border-color: #C7736E;">
+                <legend><strong>About</strong></legend>
 
-                <!-- Sucject drop down list-->
+                <!-- Subject drop down list-->
                 <label for="subject">Subjects:</label>
                 <select name="subject" id="subject">
                     <optgroup label="General">
@@ -133,10 +136,10 @@
                 <textarea id="message" name="message" rows="4" cols="50" required maxlength="100" placeholder="Write your message here..."></textarea><br>
             </fieldset>
 
-            <!-- submit button-->
+            <!-- buttons -->
             <br>
-            <button type="submit">Submit</button>
-            <button type="reset">Reset</button>
+            <button type="submit" class="submit" style="background-color: #102F15; color: white; padding: 8px; margin-right: 4px;">Submit</button>
+            <button type="reset" style="background-color: lightgray; padding: 8px;">Reset</button>
 
         </form>
         
