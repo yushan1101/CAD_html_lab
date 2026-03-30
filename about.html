@@ -9,86 +9,52 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 
-<style>
-	nav {
-            background-color: #102F15;
-        }
-
-	nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-	nav ul li {
-            padding: 15px 20px;
-        }
-
-    nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        nav ul li:hover {
-            background-color: #728C5A;
-        }
-
-	h1,h2,h3,h4{
-		color: #333;
-	}
-
-	p{
-		color: dimgray;
-	}
-
-	h1{
-		margin-top: 0;
-	}
-
-	main{
-		background-color: #EBFADC;
-		padding: 10px;
-	}
-</style>
-
 <body>
-	<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="academic.html">Academic Record</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+	<nav class="site-nav">
+        <div class="site-nav-inner">
+            <a class="site-logo" href="index.html">Yu Shan</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="academic.html">Academic Record</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
 
-    </ul>
-</nav>
+	<main>
+		<section class="portfolio-cards">
+			<article class="card">
+				<h1><i>About Me</i></h1>
+				<p>I am a student in <strong> Universiti Teknologi Malaysia</strong> which studying in the <em>Bachelor In Software Engineering With Honours</em><br><br>
+				I am a dedicated student with a strong interest in technology, especially in the field of computing and software development. I am passionate about learning how systems work and enjoy applying my knowledge to solve real-world problems through coding and logical thinking.</p>
+			</article>
 
-<main>
-	<h1><i>About Me</i></h1>
-	<p>I am a student in <strong> Universiti Teknologi Malaysia</strong> which studying in the <em>Bachelor In Software Engineering With Honours</em><br><br>
-	I am a dedicated student with a strong interest in technology, especially in the field of computing and software development. I am passionate about learning how systems work and enjoy applying my knowledge to solve real-world problems through coding and logical thinking.</p>
+		<article class="card">
+			<h2><i>Personal Strengths</i></h2>
+			<p>I am a motivated and detail-oriented individual who values consistency and continuous improvement. I always strive to complete my work with accuracy and take the initiative to learn new technologies. I believe that both <b>discipline</b> and <i>curiosity</i> are essential for personal and academic growth.</p>
+		</article>
+		
+		<article class="card">
+			<h3><i>Goals and Aspirations</i></h3>
+			<p>My goal is to become a skilled and reliable developer in the future. I aim to continuously expand my knowledge, gain practical experience, and contribute to meaningful projects.</p>
 
-	<div>
-	<h2><i>Personal Strengths</i></h2>
-	<p>I am a motivated and detail-oriented individual who values consistency and continuous improvement. I always strive to complete my work with accuracy and take the initiative to learn new technologies. I believe that both <b>discipline</b> and <i>curiosity</i> are essential for personal and academic growth.</p>
-	</div>
+			<blockquote cite="https://www.brainyquote.com/quotes/steve_jobs_416859">
+				"The only way to do great work is to love what you do."
+			</blockquote>
 
-	<h3><i>Goals and Aspirations</i></h3>
-	<p>My goal is to become a skilled and reliable developer in the future. I aim to continuously expand my knowledge, gain practical experience, and contribute to meaningful projects.</p>
+			<cite>Steve Jobs</cite>
 
-	<blockquote cite="https://www.brainyquote.com/quotes/steve_jobs_416859">
-		"The only way to do great work is to love what you do."
-	</blockquote>
+			<p>This quote inspires me to stay passionate and committed in everything I pursue.</p>
+		</article>
 
-	<cite>Steve Jobs</cite>
-
-	<p>This quote inspires me to stay passionate and committed in everything I pursue.</p>
-
-	<h4><i>Learning Journey</i></h4>
-	<p>I have learned C++, Java and newly exploring to <abbr title="HyperText Markup Language">HTML</abbr>. One of the important terms that I have learned is <dfn>algorithm</dfn>, which refers to a step-by-step procedure used to solve a problem or perform a task efficiently.</p>
-</main>
+		<article class="card">
+			<h4><i>Learning Journey</i></h4>
+			<p>I have learned C++, Java and newly exploring to <abbr title="HyperText Markup Language">HTML</abbr>. One of the important terms that I have learned is <dfn>algorithm</dfn>, which refers to a step-by-step procedure used to solve a problem or perform a task efficiently.</p>
+		</article>
+	</main>
 
 <footer>
 	<p><small>&copy; 2026 yushan. All rights reserved.</small></p>

@@ -1,93 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Lab1 - Own Portfolio">
-
-	<title>Yu Shan's Portfolio</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lab1 - Own Portfolio">
+    <title>Yu Shan's Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<style>
-	.box1{
-		padding: 20px;
-		font-size: 80%;
-	}
-
-	nav {
-            background-color: #102F15;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        nav ul li {
-            padding: 15px 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-
-        nav ul li:hover {
-            background-color: #728C5A;
-        }
-
-
-    .main{
-    	background-color: #EBFADC;
-    	padding: 20px;
-
-    }
-
-    section {
-    margin: 0;
-}
-
-h2 {
-    margin-top: 0;
-}
-</style>
 
 <body>
-	<header>
-		<div class="box1">
-			<h1><b>Hi, I'm Tang Yu Shan.<br>
-			A software engineering student</b></h1>
-		</div>
-	</header>
+    <nav class="site-nav">
+        <div class="site-nav-inner">
+            <a class="site-logo" href="index.html">Yu Shan</a>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="academic.html">Academic Record</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="skills.html">Skills</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="academic.html">Academic Record</a></li>
-            <li><a href="contact.html">Contact Me</a></li>
+    <header class="site-header">
+        <div class="hero-text">
+            <h1>Hi, I'm Tang Yu Shan</h1>
+            <p>A software engineering student</p>
+        </div>
 
-    </ul>
-</nav>
+        <div class="hero-image">
+            <img src="IMG_1126.JPG" alt="Profile photo of Yu Shan" width="190" height="220">
+        </div>
+    </header>
 
-<main>
-	<div class=main>
-		<section id="Welcome">
-			<h2>Welcome to my <i>Portfolio</i></h2>
-		</section>
+    <main>
+        <section class="section">
+            <h2>Welcome to my portfolio</h2>
+            <p>This is my personal portfolio website for the lab exercise.</p>
+        </section>
 
-		<section id="Introduction">
-			<h2>Introduction</h2>
-			<p>Hello, my name is Yu Shan. I am currently a student who is passionate about technology and learning new skills, especially in the field of computing and programming. I enjoy exploring how systems work and continuously improving my knowledge through hands-on practice and projects.</p>
-		</section>
-</div>
+        <section class="section">
+            <h2>Introduction</h2>
+            <p>Hello, my name is Yu Shan. I am currently a student who is passionate about technology and learning new skills, especially in the field of computing and programming. I enjoy exploring how systems work and continuously improving my knowledge through hands-on practice and projects.</p>
+        </section>
 
-	<footer>
+        <section class="portfolio-cards">
+            <article class="card">
+                <h3>Skills</h3>
+                <p>Explore my technical abilities, learning journey, and the technologies I currently use.</p>
+                <a href="skills.html">See skill details</a>
+            </article>
+
+            <article class="card">
+                <h3>Projects</h3>
+                <p>View project screenshots and examples of software and hardware work that I have completed.</p>
+                <a href="projects.html">Open projects</a>
+            </article>
+
+            <article class="card">
+                <h3>Academic Record</h3>
+                <p>Review my Year 2 results with a structured and responsive academic table.</p>
+                <a href="academic.html">Check academic results</a>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        
         <p><small>&copy; 2026 yushan. All rights reserved.</small></p>
         <address>
             Email: <a href="mailto:tangys2005@gmail.com">tangys2005@gmail.com</a><br>
@@ -95,6 +75,5 @@ h2 {
             Location: UTM, Johor Bahru, Malaysia
         </address>
     </footer>
-	
 </body>
 </html>
