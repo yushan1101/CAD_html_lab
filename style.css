@@ -11,6 +11,11 @@
   --color-nav-hover: #728c5a;
   --color-nav-text: #ffffff;
 
+  --color-sidebar: #405418;
+
+  --color-summary: #728C5A;
+  --color-summary-text: #ffffff;
+
   --font-body: 'Lora', Georgia, serif;
   --font-heading: 'Playfair Display', serif;
 
@@ -235,4 +240,55 @@ repeat(auto-fit, minmax(260px, 1fr))
 
 button {
   border-radius: var(--border-radius-small);
+}
+
+/*--------- Skills ---------*/
+/*-------- Sidebar ------------*/
+.skills-layout{
+	display: grid;
+	grid-template-columns: 1fr 280px;
+	gap: 1.5rem;
+}
+
+.main-content{
+	background-color: var(--color-primary);
+	padding: var(--space-medium);
+
+}
+
+.main-content ol li{
+	font-size: 2rem;
+}
+
+.sidebar{
+	background-color: var(--color-sidebar);
+	padding: var(--space-medium);
+	border-radius: var(--border-radius-md);
+}
+
+.sidebar-nav ul{
+	padding: var(--space-medium);
+}
+
+.sidebar-nav ul li{
+	font-size: 2rem;
+}
+
+.sidebar-nav a{
+	color: var(--color-nav-text);
+	text-decoration: none;
+}
+
+.sidebar-nav a:hover{
+	text-decoration: underline;
+}
+
+/*-------- Table ----------*/
+.summary-text{
+	text-align: right;
+}
+
+.sumarry{
+	background-color: var(--color-summary);
+	color: var(--color-summary-text);
 }
