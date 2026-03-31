@@ -1,3 +1,10 @@
+/* ============================================
+ BREAKPOINTS
+ mobile-first base: 320px and up (default)
+ tablet: @media (min-width: 600px)
+ desktop: @media (min-width: 1024px)
+ ============================================ */
+
 @import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Playfair+Display:wght@400;700&display=swap");
 
 :root {
@@ -155,6 +162,7 @@ a:active {
   gap: var(--space-small);
   margin: 0;
   padding: 0;
+
 }
 
 .nav-links a {
@@ -184,8 +192,14 @@ a:active {
 .site-header {
   display: flex;
   align-items: center;
+   justify-content: space-between; /* push image right */
+  flex-direction: column; /* stack on mobile */
   gap: var(--space-medium);
   text-align: center;
+}
+
+.hero-text {
+  flex: 1;   /* allow text to grow */
 }
 
 .hero-image img {
@@ -218,7 +232,7 @@ a:active {
   grid-template-columns: 1fr;
   gap: var(--space-medium);
   grid-template-columns:
-repeat(auto-fit, minmax(260px, 1fr)) 
+ 
 }
 
 .card {
@@ -227,6 +241,8 @@ repeat(auto-fit, minmax(260px, 1fr))
   box-shadow: 0 0.8rem 1.6rem rgba(16, 47, 21, 0.08);
   padding: var(--space-medium);
   transition: transform 0.2s;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
 .card:hover {
@@ -246,7 +262,7 @@ button {
 /*-------- Sidebar ------------*/
 .skills-layout{
 	display: grid;
-	grid-template-columns: 1fr 280px;
+	grid-template-columns: 1fr;
 	gap: 1.5rem;
 }
 
@@ -276,6 +292,11 @@ button {
 
 .sidebar-nav ul{
 	padding: var(--space-medium);
+}
+
+.sidebar-nav li{
+  border-top: 0.1rem solid var(--color-accent);
+  padding: var(--space-small);
 }
 
 .sidebar-nav ul li{
@@ -330,6 +351,8 @@ caption {
 }
 
 /*-------- Task 4: academic Table ----------*/
+
+
 .summary-text{
 	text-align: right;
 }
@@ -458,7 +481,10 @@ tbody tr:nth-child(even) {
   background: rgba(235, 250, 220, 0.55);
 }
 
-
+thead{
+  background-color: var(--color-nav-hover);
+  color: var(--color-nav-text);
+}
 
 /*----------------------------------*/
 @media (max-width: 599px) {
@@ -475,13 +501,13 @@ tbody tr:nth-child(even) {
 }
 
 @media (min-width: 600px) {
-  .hero {
+  .site-header {
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
   }
 
-  .page-cards,
-  .card-grid,
+  .portfolio-cards,
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -497,8 +523,8 @@ tbody tr:nth-child(even) {
 }
 
 @media (min-width: 1024px) {
-  .page-cards,
-  .card-grid,
+  .portfolio-cards,
+  .card-featured,
   .project-grid {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -508,7 +534,9 @@ tbody tr:nth-child(even) {
   }
 
   .skills-layout {
-    grid-template-columns: 1fr 28rem;
+    display: grid;
+    grid-template-columns: 1fr 280px;
+    gap: var(--space-medium);
   }
 
   .card.featured {
