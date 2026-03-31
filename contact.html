@@ -74,23 +74,28 @@
                 </select>
 
                 <!--Checkbox-->
-                <p>Interests:</p>
-                <input type="checkbox" id="webDev" name="interest" value="webDev">
-                <label for="wedDev">Web Development</label><br>
-                <input type="checkbox" id="programming" name="interest" value="programming">
-                <label for="programming">Programming</label><br>
-                <input type="checkbox" id="design" name="interest" value="design">
-                <label for="design">UI Design</label><br>
+                <p><strong>Interests:</strong></p>
+
+                <div class="option-group">
+                    <label class="option-row" for="webDev"><input type="checkbox" id="webDev" name="interest" value="webDev"> Web Development</label>
+
+                    <label class="option-row" for="programming"><input type="checkbox" id="programming" name="interest" value="programming"> Programming</label>
+
+                    <label class="option-row" for="design"><input type="checkbox" id="design" name="interest" value="design"> UI Design</label>
+                </div>
 
                 <!--radio buttons-->
-                <p>Preferred Contact Method:</p>
-                <input type="radio" id="contact-email" name="contact-method" value="email" required>
-                <label for="contact-email">Email</label><br>
-                <input type="radio" id="contact-phone" name="contact-method" value="phone">
-                <label for="contact-phone">Phone</label><br>
-                <input type="radio" id="contact-whatsapp" name="contact-method" value="whatsapp">
-                <label for="contact-whatsapp">WhatsApp</label><br><br>
+                <p><strong>Preferred Contact Method:</strong></p>
 
+                <div class="option-group">
+                    <label class="option-row" for="contact-email"><input type="radio" id="contact-email" name="contact-method" value="email" required> Email</label>
+
+                    <label class="option-row" for="contact-phone"><input type="radio" id="contact-phone" name="contact-method" value="phone"> Phone</label>
+
+                    <label class="option-row" for="contact-whatsapp"><input type="radio" id="contact-whatsapp" name="contact-method" value="whatsapp"> WhatsApp</label>
+                </div>
+
+                <br><br>
                 <!--range-->
                 <label for="experience">Rate your experience (1 to 10):</label><br>
 

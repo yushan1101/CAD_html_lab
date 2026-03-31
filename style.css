@@ -193,6 +193,7 @@ a:active {
   color: var(--color-nav-text);
 }
 
+/*--------------- Header ----------*/
 .site-header {
   display: flex;
   align-items: center;
@@ -211,10 +212,12 @@ a:active {
   box-shadow: 0 1rem 2rem rgba(16, 47, 21, 0.15);
 }
 
+/*--------- main ---*/
 .site-main{
   flex: 1;
 }
 
+/*------ footer ------*/
 .site-footer{
 	padding: 5;
 	padding-top: 0.1rem;
@@ -226,6 +229,7 @@ a:active {
 	color: var(--color-nav-text);
 }
 
+/*-- Section ----*/
 .section {
   background: rgba(255, 255, 255, 0.75);
   border: 0.1rem solid rgba(114, 140, 90, 0.15);
@@ -281,15 +285,15 @@ button {
 }
 
 .main-content ol li{
-	font-size: 2rem;
+	font-size: 1.5rem;
 }
 
 .main-content ul li{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .glossary dl{
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .sidebar{
@@ -403,6 +407,11 @@ fieldset{
   padding: var(--space-medium);
   border-color: #C7736E;
   border-radius: var(--border-radius-md);
+
+}
+
+fieldset p{
+  color: var(--color-text);
 }
 
 legend{
@@ -424,6 +433,21 @@ input, select, textarea{
   padding: var(--space-small);
   width: 100%;
 
+}
+
+.option-group {
+  display: grid;
+  gap: 1rem;
+}
+
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.option-row input {
+  width: auto;
 }
 
 a:focus-visible,
