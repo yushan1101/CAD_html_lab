@@ -300,6 +300,7 @@ button {
 	background-color: var(--color-sidebar);
 	padding: var(--space-medium);
 	border-radius: var(--border-radius-md);
+
 }
 
 .sidebar-nav ul{
