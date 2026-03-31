@@ -50,6 +50,10 @@ body {
   padding: 0;
   background-color: var(--color-primary);
   font-family: var(--font-body);
+
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full screen height */
 }
 
 img {
@@ -205,6 +209,10 @@ a:active {
 .hero-image img {
   border-radius: var(--border-radius-large);
   box-shadow: 0 1rem 2rem rgba(16, 47, 21, 0.15);
+}
+
+.site-main{
+  flex: 1;
 }
 
 .site-footer{
