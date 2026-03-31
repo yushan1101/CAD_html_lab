@@ -291,7 +291,45 @@ button {
 	text-decoration: underline;
 }
 
-/*-------- Task 4: Table ----------*/
+.sidebar-nav li:first-child{
+  border-top: none;
+}
+
+.sidebar-nav li:last-child{
+  padding-bottom: 0;
+}
+
+/*------ Projects ---*/
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-medium);
+}
+
+caption {
+  caption-side: top;
+  text-align: left;
+  margin-bottom: var(--space-small);
+}
+
+
+.media-card {
+  padding: var(--space-medium);
+  background: var(--color-surface);
+  border-radius: var(--border-radius-large);
+  box-shadow: 0 1rem 2rem rgba(16, 47, 21, 0.08);
+}
+
+.media-card figure {
+  margin: 0;
+}
+
+.media-card figcaption {
+  margin-top: var(--space-small);
+  color: var(--color-muted);
+}
+
+/*-------- Task 4: academic Table ----------*/
 .summary-text{
 	text-align: right;
 }
@@ -420,13 +458,7 @@ tbody tr:nth-child(even) {
   background: rgba(235, 250, 220, 0.55);
 }
 
-.sidebar-nav li:first-child{
-  border-top: none;
-}
 
-.sidebar-nav li:last-child{
-  padding-bottom: 0;
-}
 
 /*----------------------------------*/
 @media (max-width: 599px) {
