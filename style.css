@@ -260,6 +260,14 @@ button {
 	font-size: 2rem;
 }
 
+.main-content ul li{
+  font-size: 2rem;
+}
+
+.glossary dl{
+  font-size: 2rem;
+}
+
 .sidebar{
 	background-color: var(--color-sidebar);
 	padding: var(--space-medium);
@@ -283,7 +291,7 @@ button {
 	text-decoration: underline;
 }
 
-/*-------- Table ----------*/
+/*-------- Task 4: Table ----------*/
 .summary-text{
 	text-align: right;
 }
@@ -291,4 +299,187 @@ button {
 .sumarry{
 	background-color: var(--color-summary);
 	color: var(--color-summary-text);
+}
+
+/*--------- Task 4: Use grid-column: span 2 to make at least one element span the full width of a grid*/
+.card.featured{
+  grid-column: span 2;
+}
+
+/*---- Task 4: Add a :hover transform ----*/
+a{
+  transition: transform 0.2s;
+}
+
+/*----- Task 5 ----*/
+
+
+/*------ Task 6 --------*/
+form{
+  display: grid;
+  gap: var(--space-medium);
+}
+
+fieldset{
+  margin: 0;
+  padding: var(--space-medium);
+  border-color: #C7736E;
+  border-radius: var(--border-radius-md);
+}
+
+legend{
+  font-size:2rem;
+  color: var(--color-text);
+}
+
+label{
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  color: var(--color-text);
+}
+
+input, select, textarea{
+  border: 0.1rem solid var(--color-accent);
+  border-radius: var(--border-radius-small);
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  padding: var(--space-small);
+  width: 100%;
+
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 0.3rem rgba(199, 115, 110, 0.35);
+}
+
+.button{
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+button{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 12rem;
+  padding: 1.2rem 1.8rem;
+  border: none;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: 1.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.button-submit{
+  background-color: var(--color-secondary);
+  color: var(--color-nav-text);
+
+}
+
+.button-submit:hover {
+  background: var(--color-nav-hover);
+}
+
+.button-submit, .button-submit:active {
+  transform: scale(0.97);
+}
+
+.button-reset{
+  background-color: var(--color-muted);
+  color: var(--color-secondary);
+}
+
+.quote-box::before {
+  content: '"';
+  position: absolute;
+  top: -1.2rem;
+  left: 1.2rem;
+  font-family: var(--font-heading);
+  font-size: 6rem;
+  color: rgba(199, 115, 110, 0.45);
+}
+
+.section-title::before {
+  content: '';
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.8rem;
+  border-radius: 50%;
+  background: var(--color-accent-soft);
+}
+
+
+tbody tr:nth-child(even) {
+  background: rgba(235, 250, 220, 0.55);
+}
+
+.sidebar-nav li:first-child{
+  border-top: none;
+}
+
+.sidebar-nav li:last-child{
+  padding-bottom: 0;
+}
+
+/*----------------------------------*/
+@media (max-width: 599px) {
+  .nav-wrap,
+  .nav-links {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .nav-links a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 600px) {
+  .hero {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .page-cards,
+  .card-grid,
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form-grid .full,
+  .card.featured {
+    grid-column: span 2;
+  }
+}
+
+@media (min-width: 1024px) {
+  .page-cards,
+  .card-grid,
+  .project-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr 28rem;
+  }
+
+  .skills-layout {
+    grid-template-columns: 1fr 28rem;
+  }
+
+  .card.featured {
+    grid-column: span 2;
+  }
 }
